@@ -16,7 +16,8 @@ class ControllerSettings(object):
         hidden_size=488,
         embedding_size=256,
         learning_rate = 1e-5,
-        device = 'cpu'
+        device = 'cpu',
+        mask_ops = True,
     ):
         self.search_space = search_space
         self.max_len = max_len
@@ -24,3 +25,4 @@ class ControllerSettings(object):
         self.embedding_size = embedding_size
         self.learning_rate = learning_rate
         self.device = device
+        self.mask_ops = mask_ops
